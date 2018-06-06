@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ComPort>COM3</ComPort>
+  <TagPrefixAsHex>AABBCC</TagPrefixAsHex>
+  <TagSuffixAsHex>DDEEFF</TagSuffixAsHex>
+  <ValidationData>
+    <UrlValidationTemplate>https://arvs.orgsu.futuredev.cz/api/v1/validation/device/{0}/raceday/{1}</UrlValidationTemplate>
+    <UrlReplacePairs>
+      <UrlReplacement>
+        <Name>DeviceID</Name>
+        <Replacement>{0}</Replacement>
+        <Value>1</Value>
+      </UrlReplacement>
+      <UrlReplacement>
+        <Name>RaceDayID</Name>
+        <Replacement>{1}</Replacement>
+        <Value>XA8B3A1F</Value>
+      </UrlReplacement>
+    </UrlReplacePairs>
+  </ValidationData>
+  <ReadTagDelay>1000</ReadTagDelay>
+  <SendTagDelay>5000</SendTagDelay>
+  <LogFile>logfile.txt</LogFile>
+  <RunAutomatically>false</RunAutomatically>
+  <TagByteLengt>12</TagByteLengt>
+</Configuration>
